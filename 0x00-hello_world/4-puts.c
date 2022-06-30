@@ -1,4 +1,6 @@
-/*using the puts function to print some text*/
+/**
+ * using the puts function to print some text
+ */
 #include <stdio.h>
 int main(void)
 {
