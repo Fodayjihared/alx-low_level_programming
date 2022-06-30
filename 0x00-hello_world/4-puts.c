@@ -1,5 +1,5 @@
+/*using the puts function to print some text*/
 #include <stdio.h>
-/**description of the main function**/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
