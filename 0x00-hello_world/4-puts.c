@@ -1,12 +1,14 @@
 /**
- * using the puts function to print some text
+ * main- entery point
+ *
+ * return- return the value 0
  */
 #include <stdio.h>
 int main(void)
 {
-/**
- *this is a description for this function
- */
 puts("\"Programming is like building a multilingual puzzle");
+/**
+ * return- this is the return function for the program
+ */
 return (0);
 }
