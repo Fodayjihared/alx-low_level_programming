@@ -1,14 +1,14 @@
 /**
- * main- entery point
+ * main - Entry point
  *
- * return- return the value 0
+ *
+ *
+ * Return: Always 0 (Success)
+ *
  */
 #include <stdio.h>
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
-/**
- * return- this is the return function for the program
- */
 return (0);
 }
