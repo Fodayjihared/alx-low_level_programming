@@ -13,5 +13,10 @@ unsigned int a;
 for (a = 0; a < n; a++)
 s[a] = b;
 
+<<<<<<< HEAD
 return (s)
 }
+=======
+    return (s)
+}
+>>>>>>> ee6f1406bf768355f1160e2e34de4595c4ecb994
