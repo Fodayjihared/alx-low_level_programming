@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -std=c89 $CFILE -o c "\n"
+gcc -Wall -std=c89 $CFILE -o c
