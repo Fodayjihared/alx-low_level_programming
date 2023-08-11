@@ -11,7 +11,10 @@ int main(void)
 
 	while (alp <= 'z')
 	{
-		if (alp == 'q' && alp == 'e')
+		if (alp == 'q')
+		{
+			continue;
+		} else if (alp == 'e')
 		{
 			continue;
 		} else
