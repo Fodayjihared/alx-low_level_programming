@@ -7,21 +7,18 @@
  */
 int main(void)
 {
-	char alp = 'a';
+	char alp;
 
-	while (alp <= 'z')
+	for (alp = 'a'; alp <= 'z'; alp++)
 	{
-		if (alp == 'q')
-		{
-			continue;
-		} else if (alp == 'e')
+		if (alp == 'e' || alp == 'q')
 		{
 			continue;
 		} else
 		{
 			putchar(alp);
 		}
-		alp++;
 	}
+	putchar('\n');
 	return (0);
 }
