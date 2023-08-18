@@ -3,8 +3,9 @@
 #include "main.h"
 
 /**
- * _isupper - Checks if character is upper
- * @c: The character to check
+ * mul - Multiply two numbers
+ * @a: The first number
+ * @b: The second number
  *
  * Return: Always 1 (Success).
  */
