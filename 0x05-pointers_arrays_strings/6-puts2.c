@@ -11,12 +11,5 @@
  */
 void puts2(char *str)
 {
-	int count = 0;
-
-	while (*str != '\0')
-	{
-		puts(str);
-		count++;
-		break;
-	}
+	puts(str);
 }
