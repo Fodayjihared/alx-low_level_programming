@@ -14,9 +14,9 @@ char *cap_string(char *str)
 {
 	int i;
 	int j;
-	bool new_word;
 	char c;
 	char separators[] = " \t\n,;.!?\"(){}";
+	bool new_word = true;
 
 	for (j = 0; str[j] != '\0'; j++)
 	{
@@ -25,25 +25,21 @@ char *cap_string(char *str)
 		{
 			if (separators[i] == c)
 			{
+				new_word = true;
 				break;
 			}
 		}
-		if (!isspace(c) && new_word)
+		if (new_word && islower(c))
 		{
-			if (islower(c))
-			{
-				str[j] = toupper(c);
-			}
+			str[j] = toupper(c);
 			new_word = false;
-		} else if (isspace(c))
+		} else if (!new_word && isupper(c))
 		{
-			new_word = true;
-		} else if (!isspace(c) && !new_word)
+			str[j] = tolower(c);
+		}
+		if (!isspace(c))
 		{
-			if (isupper(c))
-			{
-				str[j] = tolower(c);
-			}
+			new_word = false;
 		}
 	}
 	return (str);
