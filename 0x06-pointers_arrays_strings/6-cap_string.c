@@ -15,7 +15,7 @@ char *cap_string(char *str)
 	int i;
 	int j;
 	char c;
-	char separators[] = " \n,;.!?\"(){}";
+	char separators[] = " \n\t,;.!?\"(){}";
 	bool new_word = true;
 
 	for (j = 0; str[j] != '\0'; j++)
