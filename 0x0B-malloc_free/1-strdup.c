@@ -13,17 +13,14 @@
 char *_strdup(char *str)
 {
 	size_t len = strlen(str);
-	char *duplicate = (char *)malloc((len + 1) * sizeof(char));
+	char *duplicate = (char *)malloc(len + 1);
 
 	if (str == NULL)
 	{
-		printf("Input string is NULL. Cannot duplicate.\n");
 		return (NULL);
 	}
-
 	if (duplicate == NULL)
 	{
-		printf("Failed to allocate memory\n");
 		return (NULL);
 	}
 
