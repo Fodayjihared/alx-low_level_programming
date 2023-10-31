@@ -12,18 +12,28 @@
  */
 char *_strdup(char *str)
 {
-	size_t len = strlen(str);
-	char *duplicate = (char *)malloc(len + 1);
+	size_t i, j;
+	char *strdout;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	if (duplicate == NULL)
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+
+	strdout = (char *) malloc(sizeof(char) * (i + 1));
+
+	if (strdout == NULL)
 	{
 		return (NULL);
 	}
-
-	strcpy(duplicate, str);
-	return (duplicate);
+	for (j = 0; j <= i; j++)
+	{
+		strdout[j] = str[j];
+	}
+	return (strdout);
 }
