@@ -8,7 +8,7 @@
  */
 void printFileName(void)
 {
-	printf("Compiled from file: %s\n", __FILE__);
+	printf(__FILE__"\n");
 }
 
 /**
